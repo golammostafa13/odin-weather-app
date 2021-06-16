@@ -12,7 +12,7 @@ const weather = (() =>{
         };
     }
     async function getData (city = 'dhaka'){
-        const endPoint = `http://api.weatherapi.com/v1/current.json?key=03591424cf324c90b1394409211606&q=${city}&aqi=no`;
+        const endPoint = `https://api.weatherapi.com/v1/current.json?key=03591424cf324c90b1394409211606&q=${city}&aqi=no`;
         try{
             const response = await fetch(endPoint, {mode: 'cors'});
             if(!response.ok){
